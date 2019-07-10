@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './EstimatedTotal.css';
 
-export default class EstimatedTotal extends Component {
-    render(){
+export default function EstimatedTotal(props) {
+    const[price, setPrice] = useState(0)
+
         return(
             
             <div className="flex-grid">
@@ -12,11 +13,10 @@ export default class EstimatedTotal extends Component {
                 </div>
 
                 <div className="col">
-                    <h2>{`$${this.props.price}`}</h2>
+                    <h2>{`$${props.price}`}</h2>
                 </div>
 
             </div>
         )
     }
 
-}

@@ -1,7 +1,7 @@
-import React,{ Component} from 'react';
+import React,{  useState} from 'react';
 
-export default class TaxFees extends Component {
-    render(){
+export default function TaxFees(props){
+    const[taxes,setTaxes] = useState(0)   
         return(
             <div className="flex-grid">
 
@@ -10,10 +10,9 @@ export default class TaxFees extends Component {
             </div>
 
             <div className="col">
-                <p>{`$${this.props.taxes}`}</p>
+                <p>{`$${props.taxes}`}</p>
             </div>
 
         </div>
         )
     }
-}

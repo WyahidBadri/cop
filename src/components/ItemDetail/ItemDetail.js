@@ -40,6 +40,7 @@ export default class ItemDetail extends Component {
 
                 <div className="col">
                     {this.state.Items.map((item, index) =>(
+                        
                         <p>Item:{Items.name} Quantity: {Items.quantity} Price: {Items.price}</p>
                     ))}
                 </div>
