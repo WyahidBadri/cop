@@ -14,17 +14,19 @@ export default function App(){
     },[]
     ) 
 
-    let taxes = total * 0.0875;
-    let shipping = total / 20;
+    let taxes = total * 0.0875; // Set to what taxes are applied
+    let shipping = total / 20; //Set to Whatever the shipping formula is 
     let estimatedTotal = total + taxes + shipping;
        
     return (
       <div className="container">
-      <SubTotal price={total} />
-      <TaxFees taxes={taxes} />
-      <ShippingPrice ship={shipping}/>
-      <EstimatedTotal price={estimatedTotal}/>
-      <ItemDetail price={estimatedTotal}/>     
+      <h3>Order Summary</h3>
+      <SubTotal price={total.toFixed(2)} />
+      <TaxFees taxes={taxes.toFixed(2)} />
+      <ShippingPrice ship={shipping.toFixed(2)}/>
+      <EstimatedTotal price={estimatedTotal.toFixed(2)}/>
+      <br />
+      {/* <ItemDetail price={(estimatedTotal - shipping).toFixed(2)}/>      */}
       </div>
     )
 }

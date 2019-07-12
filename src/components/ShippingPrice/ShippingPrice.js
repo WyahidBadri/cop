@@ -10,7 +10,7 @@ import './ShippingPrice.css';
                     <div className="flex-grid">
         
                         <div className="col">
-                            <p>Shipping: </p>
+                            <p>Estimated Shipping & Delivery </p>
                         </div>
         
                         <div className="col">

@@ -9,7 +9,7 @@ export default function EstimatedTotal(props) {
             <div className="flex-grid">
 
                 <div className="col">
-                    <h2>Est. Total: </h2>
+                    <h2>Est. Grand Total </h2>
                 </div>
 
                 <div className="col">
