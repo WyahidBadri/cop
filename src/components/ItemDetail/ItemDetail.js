@@ -19,6 +19,7 @@ export default class ItemDetail extends Component {
            event.preventDefault();
            this.setState({ displayMenu: true }, () => {
            document.addEventListener('click', this.hideDropdownMenu);
+           
            });
          }
        

@@ -21,11 +21,12 @@ export default function App(){
     return (
       <div className="container">
       <h3>Order Summary</h3>
+      <ItemDetail />     
       <SubTotal price={total.toFixed(2)} />
       <TaxFees taxes={taxes.toFixed(2)} />
       <ShippingPrice ship={shipping.toFixed(2)}/>
       <EstimatedTotal price={estimatedTotal.toFixed(2)}/>
-      {/* <ItemDetail price={(estimatedTotal - shipping).toFixed(2)}/>      */}
+      
       </div>
     )
 }
