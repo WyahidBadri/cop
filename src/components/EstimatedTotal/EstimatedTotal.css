@@ -3,4 +3,11 @@
   }
   .col {
     flex: 1;
+    height: 21px;
+    width: 138px;
+    color: #000000;
+    font-family: "Raleway ExtraBold";	
+    font-size: 18px;	
+    letter-spacing: 0.82px;	
+    line-height: 21px;
   }
