@@ -10,7 +10,7 @@ export default function App(){
   
     const [total, setTotal] = useState(0);
     useEffect(()=> {
-     setTotal(100)
+     setTotal(100) //updates to added subtotoal of all items in cart
     },[]
     ) 
 
@@ -25,7 +25,6 @@ export default function App(){
       <TaxFees taxes={taxes.toFixed(2)} />
       <ShippingPrice ship={shipping.toFixed(2)}/>
       <EstimatedTotal price={estimatedTotal.toFixed(2)}/>
-      <br />
       {/* <ItemDetail price={(estimatedTotal - shipping).toFixed(2)}/>      */}
       </div>
     )
